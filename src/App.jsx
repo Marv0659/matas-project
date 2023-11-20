@@ -1,11 +1,13 @@
 
 import './App.css'
+import Test from './components/test'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <Test />
       
     </>
   )
