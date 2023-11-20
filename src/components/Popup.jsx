@@ -1,37 +1,38 @@
 import styles from "./popup.module.css";
+import React, { useState } from "react";
 
 function Popupbox() {
+  const [question, setQuestion] = useState(0);
+
   function nextQuestion() {
-    // Skjul nuværende spørgsmål
-    const currentQuestion = document.getElementById("questionForm");
-    currentQuestion.style.display = "none";
+    setQuestion(question + 1);
   }
 
-  function popupfunction() {}
-  return;
-  <>
-    <div class="popup">
-      <h2>Spørgeskema</h2>
-      <p class="question-text">Spørgsmål spørgsmåldawawd?</p>
-      <form id="questionForm">
-        <label for="option1">
-          <input type="checkbox" id="option1" value="value1" /> 1
-        </label>
-        <br />
-        <label for="option2">
-          <input type="checkbox" id="option2" value="value2" /> 2
-        </label>
-        <br />
-        <label for="option3">
-          <input type="checkbox" id="option3" value="value3" /> 2
-        </label>
-        <br />
-        <button type="button" onclick="nextQuestion()">
-          Næste
-        </button>
-      </form>
-    </div>
-  </>;
+  return (
+    <>
+      <div className={styles.popup}>
+        <h2>Spørgeskema</h2>
+        <p className={styles.questionText}>Spørgsmål spørgsmåldawawd?</p>
+        <form id="questionForm">
+          <label htmlFor="option1">
+            <input type="checkbox" id="option1" value="value1" /> 1
+          </label>
+          <br />
+          <label htmlFor="option2">
+            <input type="checkbox" id="option2" value="value2" /> 2
+          </label>
+          <br />
+          <label htmlFor="option3">
+            <input type="checkbox" id="option3" value="value3" /> 2
+          </label>
+          <br />
+          <button type="button" onClick={nextQuestion()}>
+            Næste
+          </button>
+        </form>
+      </div>
+    </>
+  );
 }
 
 export default Popupbox;
