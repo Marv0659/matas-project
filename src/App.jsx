@@ -1,14 +1,13 @@
-
-import './App.css'
+import { Popover, Steps } from "antd";
+import StepsTab from "./components/StepsTab";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      
+      <StepsTab />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
