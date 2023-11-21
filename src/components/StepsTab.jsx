@@ -1,6 +1,12 @@
 import { useState } from "react";
 import GenderStepContent from "./GenderStepContent";
+import AgeStepContent from "./AgeStepContent";
+import TypeStepContent from "./TypeStepContent";
 import { Steps, Popover, Button } from "antd"; // Assuming you are using Ant Design components
+import PropertyStepContent from "./PropertyStepContent";
+import KriterierStepContent from "./KriterierStepContent";
+import PrisStepContent from "./PrisStepContent";
+import BrandStepContent from "./BrandStepContent";
 
 const customDot = (dot, { status, index }) => (
   <Popover
@@ -33,6 +39,12 @@ const StepsTab = () => {
 
   const stepContent = [
     <GenderStepContent />,
+    <AgeStepContent />,
+    <TypeStepContent />,
+    <PropertyStepContent />,
+    <KriterierStepContent />,
+    <BrandStepContent />,
+    <PrisStepContent />,
     // ... other custom components
   ];
 
