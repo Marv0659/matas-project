@@ -2,34 +2,29 @@ import { Card } from "antd";
 import React from "react";
 import { useEffect, useState } from "react";
 import CardTest from "./CardTest";
+import { createClient } from "@supabase/supabase-js";
 
-function ResultatStepContent() {
+const supabaseUrl = "https://auoiblhjqpxvkztdmjis.supabase.co";
+const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF1b2libGhqcXB4dmt6dGRtamlzIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTY4NTE2MTYsImV4cCI6MjAxMjQyNzYxNn0.oNoBo2kBItmIqvZYDT2aABrQe32vvi-dhmSp92jEpcA";
+
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+const ResultatStepContent = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
-      const apiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF1b2libGhqcXB4dmt6dGRtamlzIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTY4NTE2MTYsImV4cCI6MjAxMjQyNzYxNn0.oNoBo2kBItmIqvZYDT2aABrQe32vvi-dhmSp92jEpcA";
-      const apiUrl = "https://auoiblhjqpxvkztdmjis.supabase.co/rest/v1/matas";
-
       try {
-        const response = await fetch(apiUrl, {
-          method: "GET",
-          headers: {
-            "Content-Type": "application/json",
-            apikey: apiKey,
-            // Add any other headers if required
-          },
-        });
+        const { data, error } = await supabase.from("matas").select("*"); // replace 'your_table_name' with your actual table name
 
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
+        if (error) {
+          throw error;
         }
 
-        const result = await response.json();
-        setData(result);
-        console.log(result, "test");
+        setData(data);
+        console.log(data);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching data:", error.message);
       }
     };
 
@@ -37,12 +32,17 @@ function ResultatStepContent() {
   }, []);
 
   return (
-    <div>
-      {data.map((item) => (
-        <CardTest text={item.Productname} img={item.img} />
-      ))}
+    <div className="grid-container">
+      {data ? (
+        data.map((item) => (
+          // Render your data here
+          <CardTest img={item.img} text={item.productname} />
+        ))
+      ) : (
+        <p>Loading...</p>
+      )}
     </div>
   );
-}
+};
 
 export default ResultatStepContent;

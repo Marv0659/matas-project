@@ -83,7 +83,7 @@ const StepsTab = () => {
           },
         ]}
       />
-      <div className="boxstyling">
+      <div className="boxstyling genderbox">
         <div style={{ marginTop: 16 }}>{stepContent[currentStep]}</div>
         <Button type="primary" onClick={handleNextStep}>
           Næste
