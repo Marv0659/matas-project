@@ -1,0 +1,33 @@
+/* FILEPATH: /c:/Users/maaud/OneDrive/kea3sem/matas-project/src/components/card.css */
+
+/* Increase the size of the checkbox input */
+label {
+  /* Adjust the scale factor as needed */ /* Center the checkbox input horizontally and vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the checkbox */
+
+input[type="checkbox"] {
+  /* Double-sized Checkboxes */
+  opacity: 0;
+  transform: scale(15);
+  padding: 15px;
+  margin: 15px;
+}
+
+input[type="checkbox"]:checked {
+  /* Double-sized Checkboxes */
+  opacity: 100;
+  transform: scale(16);
+}
+
+input[type="checkbox"]: {
+  /* Opera */
+}
+
+.card label {
+  display: none;
+}

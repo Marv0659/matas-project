@@ -5,7 +5,7 @@ import "./titles.css";
 function AgeStepContent() {
   return (
     <div>
-      <div className="agebox">
+      <div className="genderbox">
         <h1>Hvad er modtagers alder?</h1>
         <p> Vælg kun en</p>
         <AgeForm />
