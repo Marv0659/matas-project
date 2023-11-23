@@ -4,7 +4,7 @@ import CardTest from "./CardTest";
 function AgeForm() {
   return (
     <div className="grid-container">
-      <CardTest img="./public/imgs/alder/teen.webp" text="Teen" />
+      <CardTest img="/imgs/alder/teen.webp" text="Teen" />
       <CardTest img="./public/imgs/alder/20.webp" text="20erne" />
       <CardTest img="./public/imgs/alder/30.webp" text="30erne" />
       <CardTest img="./public/imgs/alder/40.webp" text="40erne" />
