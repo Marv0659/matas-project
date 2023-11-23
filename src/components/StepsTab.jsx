@@ -7,6 +7,7 @@ import PropertyStepContent from "./PropertyStepContent";
 import KriterierStepContent from "./KriterierStepContent";
 import PrisStepContent from "./PrisStepContent";
 import BrandStepContent from "./BrandStepContent";
+import "./buttons.css";
 
 const customDot = (dot, { status, index }) => (
   <Popover
@@ -80,13 +81,15 @@ const StepsTab = () => {
           },
         ]}
       />
-      <div style={{ marginTop: 16 }}>{stepContent[currentStep]}</div>
-      <Button type="primary" onClick={handleNextStep}>
-        Next Step
-      </Button>
-      <Button type="secondary" onClick={handlePreviousStep} disabled={currentStep === 0}>
-        Previous Step
-      </Button>
+      <div className="boxstyling">
+        <div style={{ marginTop: 16 }}>{stepContent[currentStep]}</div>
+        <Button type="primary" onClick={handleNextStep}>
+          Next Step
+        </Button>
+        <Button type="secondary" onClick={handlePreviousStep} disabled={currentStep === 0}>
+          Previous Step
+        </Button>
+      </div>
     </>
   );
 };
