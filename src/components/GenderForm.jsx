@@ -8,13 +8,11 @@ function GenderForm() {
         Mand
         <input id="mand" type="checkbox" />
       </label>
-
       <label htmlFor="kvinde">
         {" "}
         Kvinde
         <input id="kvinde" type="checkbox" />
       </label>
-
       <label htmlFor="underordnet">
         {" "}
         Underordnet
@@ -36,20 +34,18 @@ function GenderForm() {
           <h3 className="cardtitle">Underordnet</h3>
         </div>
       </div>
-
       {/* <label htmlFor="kvinde" className="card">
         {" "}
         Kvinde
         <input id="kvinde" type="checkbox" />
         <img src="./public/imgs/egenskab/glow.webp" alt="" className="card-image" />
         <h3 className="cardtitle">Kvinde</h3>
-      </label> */}
-
+      </label>  */}
       {/* <label htmlFor="glowCheckbox" className="card">
         <input id="glowCheckbox" type="checkbox" />
         <img src="./public/imgs/egenskab/glow.webp" alt="" className="card-image" />
         <h3 className="cardtitle">Glow</h3>
-      </label> */}
+      </label>  */}
     </div>
   );
 }

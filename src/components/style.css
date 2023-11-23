@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter&display=swap");
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 60px;
+
   justify-content: center;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
   padding-bottom: 4rem;
 }
@@ -44,4 +46,5 @@
 
 h3 {
   color: white;
+  font-family: "Inter", sans-serif;
 }

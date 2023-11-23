@@ -1,10 +1,14 @@
 import React from "react";
+import PropertyForm from "./PropertyForm";
 
 function PropertyStepContent() {
   return (
     <div>
-      <h1>Hvilken egenskab skal produktet besidde?</h1>
-      <p>Vælg blot et kriterie</p>
+      <div className="propertybox">
+        <h1>Hvilken egenskab skal produktet besidde?</h1>
+        <p>Vælg blot et kriterie</p>
+        <PropertyForm />
+      </div>
     </div>
   );
 }
