@@ -3,9 +3,9 @@ import "./style.css";
 function GenderForm() {
   return (
     <div className="grid-container">
-      <CardTest img="/imgs/gender/male.webp" text="Mand" />
-      <CardTest img="/imgs/gender/female.webp" text="Kvinde" />
-      <CardTest img="#" text="Underordnet" />
+      <CardTest img="./public/imgs/gender/male.webp" text="Mand" />
+      <CardTest img="./public/imgs/gender/female.webp" text="Kvinde" />
+      <CardTest img="./public/imgs/blank/blank.webp" text="Underordnet" />
     </div>
   );
 }

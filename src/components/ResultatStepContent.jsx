@@ -39,7 +39,7 @@ function ResultatStepContent() {
   return (
     <div>
       {data.map((item) => (
-        <CardTest text={item.Productname} img={item.img} />
+        <CardTest text={item.productname} img={item.img} />
       ))}
     </div>
   );
