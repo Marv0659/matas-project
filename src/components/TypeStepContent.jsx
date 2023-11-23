@@ -5,7 +5,7 @@ import TypeForm from "./TypeForm";
 function TypeStepContent() {
   return (
     <div>
-      <div className="typebox">
+      <div className="genderbox">
         <h1>Hvilken slags vare søger du?</h1>
         <p>Vælg blot et kriterie</p>
         <TypeForm />

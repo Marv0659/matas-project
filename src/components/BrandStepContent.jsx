@@ -4,7 +4,7 @@ import "./titles.css";
 
 function BrandStepContent() {
   return (
-    <div>
+    <div className="genderbox">
       <h1>Er der særlige ønsker til brand?</h1>
       <p>Vælg mindst én</p>
       <BrandForm />

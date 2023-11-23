@@ -1,8 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter&display=swap");
+
 .grid-container {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
+  justify-content: center;
+  place-items: center;
+  padding: 0;
+  gap: 3rem;
+  max-width: 40rem;
+  /* margin: 0 auto; */
+  padding-bottom: 4rem;
+  margin: 0;
+}
+
+.genderbox {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   justify-content: center;
   max-width: 700px;
@@ -48,3 +68,5 @@ h3 {
   color: white;
   font-family: "Inter", sans-serif;
 }
+
+/* Style the checkbox */

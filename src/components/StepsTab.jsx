@@ -7,6 +7,7 @@ import PropertyStepContent from "./PropertyStepContent";
 import KriterierStepContent from "./KriterierStepContent";
 import PrisStepContent from "./PrisStepContent";
 import BrandStepContent from "./BrandStepContent";
+import ResultatStepContent from "./ResultatStepContent";
 import "./buttons.css";
 
 const customDot = (dot, { status, index }) => (
@@ -46,6 +47,7 @@ const StepsTab = () => {
     <KriterierStepContent />,
     <BrandStepContent />,
     <PrisStepContent />,
+    <ResultatStepContent />,
     // ... other custom components
   ];
 
@@ -84,10 +86,10 @@ const StepsTab = () => {
       <div className="boxstyling">
         <div style={{ marginTop: 16 }}>{stepContent[currentStep]}</div>
         <Button type="primary" onClick={handleNextStep}>
-          Next Step
+          Næste
         </Button>
         <Button type="secondary" onClick={handlePreviousStep} disabled={currentStep === 0}>
-          Previous Step
+          Tilbage
         </Button>
       </div>
     </>

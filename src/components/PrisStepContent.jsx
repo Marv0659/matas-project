@@ -5,7 +5,7 @@ import PrisForm from "./PrisForm";
 function PrisStepContent() {
   return (
     <div>
-      <div className="prisbox">
+      <div className="genderbox">
         <h1>Hvilken prisklasse søger du i?</h1>
         <p>Vælg mindst ét kriterie</p>
         <PrisForm />
