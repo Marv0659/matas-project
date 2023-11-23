@@ -85,11 +85,11 @@ const StepsTab = () => {
       />
       <div className="boxstyling">
         <div style={{ marginTop: 16 }}>{stepContent[currentStep]}</div>
-        <Button type="primary" onClick={handleNextStep}>
-          Næste
-        </Button>
         <Button type="secondary" onClick={handlePreviousStep} disabled={currentStep === 0}>
           Tilbage
+        </Button>
+        <Button type="primary" onClick={handleNextStep}>
+          Næste
         </Button>
       </div>
     </>

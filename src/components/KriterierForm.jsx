@@ -9,7 +9,7 @@ function KriterierForm() {
       <CardTest img="./public/imgs/kriterier/svane.webp" text="Svanemærket" />
       <CardTest img="./public/imgs/kriterier/uparfume.webp" text="U/ parfume" />
       <CardTest img="./public/imgs/kriterier/vegan.webp" text="Vegansk" />
-      <CardTest text="Ligemeget" />
+      <CardTest img="./public/imgs/blank/blank.webp" text="Underordnet" />
     </div>
   );
 }
