@@ -36,7 +36,7 @@ const ResultatStepContent = () => {
       {data ? (
         data.map((item) => (
           // Render your data here
-          <CardTest img={item.img} text={item.productname} />
+          <CardTest img={`./img/products/${item.img}`} text={item.productname} />
         ))
       ) : (
         <p>Loading...</p>
