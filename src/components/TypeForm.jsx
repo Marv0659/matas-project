@@ -9,7 +9,7 @@ function TypeForm() {
       <CardTest img="./img/kategori/dufte.webp" text="Dufte" />
       <CardTest img="./img/kategori/elektronik.webp" text="Elektronik" />
       <CardTest img="./img/kategori/helse.webp" text="Helsekost" />
-      <CardTest img="./img/blank/blank.webp" text="Ingen præference" />
+      <CardTest text="Ingen præference" />
     </div>
   );
 }
