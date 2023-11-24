@@ -4,12 +4,12 @@ import CardTest from "./CardTest";
 function TypeForm() {
   return (
     <div className="grid-container">
-      <CardTest img="./public/imgs/kategori/ansigtspleje.webp" text="Ansigtpleje" />
-      <CardTest img="./public/imgs/kategori/hårpleje.webp" text="Hårpleje" />
-      <CardTest img="./public/imgs/kategori/dufte.webp" text="Dufte" />
-      <CardTest img="./public/imgs/kategori/elektronik.webp" text="Elektronik" />
-      <CardTest img="./public/imgs/kategori/helse.webp" text="Helsekost" />
-      <CardTest img="./public/imgs/blank/blank.webp" text="Ingen præference" />
+      <CardTest img="./img/kategori/ansigtspleje.webp" text="Ansigtpleje" />
+      <CardTest img="./img/kategori/hårpleje.webp" text="Hårpleje" />
+      <CardTest img="./img/kategori/dufte.webp" text="Dufte" />
+      <CardTest img="./img/kategori/elektronik.webp" text="Elektronik" />
+      <CardTest img="./img/kategori/helse.webp" text="Helsekost" />
+      <CardTest img="./img/blank/blank.webp" text="Ingen præference" />
     </div>
   );
 }
